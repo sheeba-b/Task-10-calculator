@@ -1,35 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculator</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <style>
+        /* CSS styles for the form */
+        form {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"]
+        input[type="text"]
+        input[type= "Address"]
+        input[type="Pincode"]
+        input[type="Gender"]
+        input[type="email"]
+        input[type="Password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 150px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #5d00ff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #9200b3;
+        }
+    </style>
 </head>
 <body>
-  <div class="calculator">
-    <input type="text" class="display" id="display" disabled>
-    <div class="buttons">
-      <button onclick="appendToDisplay('7')">7</button>
-      <button onclick="appendToDisplay('8')">8</button>
-      <button onclick="appendToDisplay('9')">9</button>
-      <button onclick="appendToDisplay('/')">/</button>
-      <button onclick="appendToDisplay('4')">4</button>
-      <button onclick="appendToDisplay('5')">5</button>
-      <button onclick="appendToDisplay('6')">6</button>
-      <button onclick="appendToDisplay('')"></button>
-      <button onclick="appendToDisplay('1')">1</button>
-      <button onclick="appendToDisplay('2')">2</button>
-      <button onclick="appendToDisplay('3')">3</button>
-      <button onclick="appendToDisplay('-')">-</button>
-      <button onclick="appendToDisplay('0')">0</button>
-      <button onclick="appendToDisplay('.')">.</button>
-      <button onclick="clearDisplay()">C</button>
-      <button onclick="calculateResult()">=</button>
-      <button onclick="appendToDisplay('+')">+</button>
-    </div>
-  </div>
-  
-  <script src="script.js"></script>
+
+    <form action="submit.php" method="post">
+        <label for="Firstname">Firstname:</label>
+        <input type="text" id="Firstname" name="Firstname">
+
+        <label for="Lastname">Lasttname:</label>
+        <input type="text" id="Lastname" name="Lastname">
+
+        <label for="Address"><Address>:</label>
+        <input type="Address" id="Address" name="Address">
+
+        <label for="Pincode">Pincode:</label>
+        <input type="Pincode" id="Pincode" name="Pincode">
+
+        <label for="Gender">Gender:</label>
+        <input type="Gender" id="Gender" name="Gender">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+
+      
+
+        <input type="submit" value="Submit">
+    </form>
+
 </body>
 </html>
